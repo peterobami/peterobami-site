@@ -1,0 +1,242 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLING */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eaf2f8; /* Light blue tint */
+  color: #222;
+  line-height: 1.7;
+}
+
+/* LINKS */
+a {
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+/* HEADER */
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* HERO SECTION WITH PHOTO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 40px;
+  background: linear-gradient(135deg, #0a3d62, #3c6382);
+  color: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 330px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+/* MAIN CONTENT SECTION */
+.section {
+  max-width: 1100px;
+  margin: -40px auto 40px auto;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.section h2 {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0a3d62;
+}
+
+/* CARD SECTIONS */
+.card {
+  background: #f8fbff;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #dce7f3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* NEWSLETTER */
+.newsletter {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+  background: #eaf2f8;
+  border-radius: 14px;
+  border: 1px solid #c9dcec;
+}
+
+.newsletter input[type="email"] {
+  padding: 12px;
+  width: 260px;
+  max-width: 80%;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #0a3d62;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter button:hover {
+  background: #07405a;
+}
+
+/* FOOTER */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+footer .social-links a:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-image img {
+    width: 240px;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0a0f14;
+    color: #f5f5f5;
+  }
+
+  header {
+    background: #000;
+  }
+
+  .card {
+    background: #0f1a24;
+    border-color: #1f2d3a;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+  }
+
+  .newsletter {
+    background: #0f1a24;
+    border-color: #1f2d3a;
+  }
+
+  footer {
+    background: #000;
+  }
+
+  input, textarea {
+    background: #111;
+    color: #f5f5f5;
+    border-color: #444;
+  }
+}
