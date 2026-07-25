@@ -2,11 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact — Peter Obami</title>
+  <title>Work With Me — Peter Obami</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    /* ============================
+       LIGHT PREMIUM OVERRIDES
+       ============================ */
+
+    .booking-page {
+      background: #f8fbff;
+    }
+
+    /* HERO — Light, Tight, Premium */
+    .hero {
+      background: white !important;
+      padding: 70px 20px 40px !important;
+      text-align: center;
+      color: #0a3d62 !important;
+      border-bottom: 1px solid #dce7f3;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.85;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      margin-top: 28px;
+      padding: 14px 32px;
+      background: #0a3d62;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .hero-cta:hover {
+      background: #07405a;
+    }
+
+    /* SECTION HEADER */
+    .section-header {
+      text-align: center;
+      margin: 40px auto 20px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* MAIN SECTION OVERRIDE */
+    .booking-page .section {
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      display: block !important;
+      max-width: 1100px !important;
+      margin: 20px auto !important;
+    }
+
+    /* GRID */
+    .booking-page .layout {
+      display: grid !important;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr) !important;
+      gap: 40px !important;
+      align-items: start !important;
+    }
+
+    @media (max-width: 900px) {
+      .booking-page .layout {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    /* LIGHT PREMIUM CARDS */
+    .booking-page .card {
+      background: white !important;
+      border-radius: 16px !important;
+      padding: 28px !important;
+      border: 1px solid #dce7f3 !important;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06) !important;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+
+    .booking-page .card h2,
+    .booking-page .card h3 {
+      color: #0a3d62 !important;
+      margin-bottom: 12px;
+    }
+
+    .booking-page .card p {
+      color: #444 !important;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    /* CALENDLY */
+    .calendar-frame {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #dce7f3;
+      background: white;
+      min-height: 560px;
+      margin-top: 10px;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 10px;
+    }
+
+    .benefit {
+      background: #f8fbff;
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid #dce7f3;
+    }
+
+    .benefit-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #0a3d62;
+    }
+
+    .benefit-text {
+      color: #444;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* FAQ */
+    .faq {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      background: #f8fbff;
+      border-radius: 14px;
+      padding: 18px;
+      border: 1px solid #dce7f3;
+      margin-bottom: 14px;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #0a3d62;
+    }
+
+    .faq-a {
+      color: #444;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* CLOSING */
+    .closing {
+      margin-top: 50px;
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.7;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
+
 <body>
+<div class="booking-page">
 
 <header>
   <div class="logo">Peterobami.com</div>
@@ -18,60 +213,91 @@
     <a href="testimonials.html">Testimonials</a>
     <a href="blog.html">Blog</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="https://calendly.com/peterobami/new-meeting" class="cta-nav" target="_blank">Book a Session</a>
+    <a href="contact.html">Work With Me</a>
+    <a href="https://calendly.com/peterobami/new-meeting" class="cta-nav" target="_blank">Work With Me</a>
   </nav>
 </header>
 
-<!-- CONTACT HERO -->
-<section class="hero small-hero">
-  <div class="hero-text">
-    <h1>Contact Me</h1>
-    <p>Let’s connect and explore how we can work together.</p>
-  </div>
+<!-- HERO -->
+<section class="hero">
+  <h1>Work With Me</h1>
+  <p>Book a clarity session designed to help you move forward with confidence and intention.</p>
 </section>
 
-<!-- CONTACT CONTENT -->
+<!-- SECTION HEADER -->
+<div class="section-header">
+  <h2>Clarity Session</h2>
+  <p>This session is designed to help you gain clarity, direction, and momentum - so you can move forward with intention.</p>
+</div>
+
+<!-- MAIN CONTENT -->
 <section class="section">
 
-  <h2>Send a Message</h2>
+  <div class="layout">
 
-  <div class="card">
-    <form>
+    <!-- LEFT: BOOKING -->
+    <div class="card" id="booking">
+      <h2>Choose Your Time</h2>
+      <p>Select a slot that fits your schedule. Once you confirm, you’ll receive a calendar invite and session details instantly.</p>
 
-      <label>Name</label>
-      <input type="text" placeholder="Your name" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+      <div class="calendar-frame">
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/peterobami?hide_gdpr_banner=1" 
+             style="min-width:100%;height:560px;">
+        </div>
+        <script type="text/javascript" 
+                src="https://assets.calendly.com/assets/external/widget.js" 
+                async>
+        </script>
+        <!-- Calendly inline widget end -->
+      </div>
+    </div>
 
-      <label>Email</label>
-      <input type="email" placeholder="Your email address" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+    <!-- RIGHT: VALUE + FAQ -->
+    <div class="card">
 
-      <label>Phone Number</label>
-      <input type="text" placeholder="Your phone number" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;">
+      <h3>What You’ll Gain</h3>
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit-title">Clarity</div>
+          <div class="benefit-text">See your situation from a new perspective and understand what’s really holding you back.</div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-title">Direction</div>
+          <div class="benefit-text">Identify practical next steps you can take immediately after the session.</div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-title">Momentum</div>
+          <div class="benefit-text">Leave with confidence and a plan you can act on with intention.</div>
+        </div>
+      </div>
 
-      <label>Message</label>
-      <textarea rows="6" placeholder="How can I help you?" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ccc;"></textarea>
+      <div class="faq">
+        <h3>What to Expect</h3>
 
-      <button type="submit" style="margin-top:20px; padding:14px 28px; background:#0a3d62; color:white; border:none; border-radius:8px; cursor:pointer; font-size:1rem;">
-        Send Message
-      </button>
+        <div class="faq-item">
+          <div class="faq-q">How long is the session?</div>
+          <div class="faq-a">Typically 30 minutes, focused entirely on you and your goals.</div>
+        </div>
 
-    </form>
+        <div class="faq-item">
+          <div class="faq-q">Where does it happen?</div>
+          <div class="faq-a">Online via a secure video call link sent to you after booking.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">What do I need to prepare?</div>
+          <div class="faq-a">Just bring yourself, your current challenges, and an openness to explore new possibilities.</div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <!-- CONTACT EMAIL CARD -->
-  <div class="card">
-    <h3>Prefer Email?</h3>
-    <p>You can reach me directly at:</p>
-    <p style="font-weight:bold; color:#8dcdfa;">contact@peterobami.com</p>
-  </div>
-
-  <!-- CTA -->
-  <div class="newsletter">
-    <h2>Prefer to Book a Session?</h2>
-    <p>You can schedule a session directly using my online calendar.</p>
-    <a href="https://calendly.com/peterobami/new-meeting" target="_blank">
-      <button type="button">Book a Session</button>
-    </a>
+  <div class="closing">
+    A single conversation can change the way you see your path.  
+    When you’re ready, choose a time that feels right - and let’s make it count.
   </div>
 
 </section>
@@ -85,5 +311,6 @@
   </div>
 </footer>
 
+</div>
 </body>
 </html>
